@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+
+# Byte-compiled / cached files
+__pycache__/
+*.pyc
+*.pyo
+
+# Django stuff
+db.sqlite3
+/media/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
