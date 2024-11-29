@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Dreamline Marketplace{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Explore Creative Projects</h1>
+    
+    <!-- Search Form -->
+    <form method="GET" class="mb-4">
+        <input type="text" name="q" placeholder="Search projects..." value="{{ query }}" class="form-control">
+    </form>
+    
+    <!-- Projects List -->
+    <div class="row">
+        {% for project in projects %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description|truncatechars:100 }}</p>
+                        <p><strong>Skills:</strong> {{ project.skills_required }}</p>
+                        <p><strong>Budget:</strong> ${{ project.budget|default:"N/A" }}</p>
+                        <a href="{% url 'project_detail' project.id %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <p class="text-center">No projects found. Try a different search term!</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

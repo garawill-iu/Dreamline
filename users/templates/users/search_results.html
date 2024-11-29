@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-primary mb-4">Search Results</h1>
+    {% if query %}
+        <p>Showing results for "<strong>{{ query }}</strong>":</p>
+        <ul class="list-group">
+            {% for user in results %}
+                <li class="list-group-item">
+                    <h5>{{ user.username }}</h5>
+                    <p><strong>Location:</strong> {{ user.location }}</p>
+                    <p><strong>Skills:</strong> {{ user.skills }}</p>
+                    <a href="{% url 'profile' %}?user={{ user.id }}" class="btn btn-primary">View Profile</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found. Try searching for different terms.</p>
+    {% endif %}
+</div>
+{% endblock %}

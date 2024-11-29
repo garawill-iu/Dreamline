@@ -1,0 +1,259 @@
+/* General Styling */
+body {
+    background: #f8f9fa; /* Light neutral background */
+    font-family: 'Inter', Arial, sans-serif;
+    color: #222831; /* Dark gray for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #16a085; /* Accent turquoise for links */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222831 !important; /* Dark gray for contrast */
+    border-bottom: 2px solid #16a085 !important; /* Turquoise accent line */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffffff; /* White text for branding */
+}
+
+.navbar-nav .nav-link {
+    color: #e9ecef; /* Light gray text */
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1abc9c; /* Hover effect with gradient turquoise */
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #555555;
+    border-radius: 30px;
+    background-color: #393e46; /* Dark neutral for search */
+    padding: 5px 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    flex: 1;
+    font-size: 0.9rem;
+    background-color: transparent;
+    color: #f9f9f9; /* White text */
+}
+
+.search-form input::placeholder {
+    color: #d4d4d4; /* Light gray placeholder */
+}
+
+.search-form button {
+    background-color: #16a085; /* Turquoise */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #12876b; /* Darker turquoise hover */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #1abc9c, #16a085) !important; /* Turquoise gradient */
+    color: #ffffff !important;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary {
+    background-color: #ffffff;
+    color: #1abc9c;
+    border: 2px solid #ffffff;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #16a085;
+    color: #ffffff;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+    color: #16a085 !important; /* Turquoise */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Section Headings */
+h2, h4 {
+    color: #16a085 !important; /* Apply turquoise to all headings */
+    font-weight: bold;
+}
+
+/* How It Works Section */
+.features-section {
+    background-color: #f8f9fa;
+    color: #222831;
+    padding: 60px 20px;
+}
+
+.features-section h2 {
+    color: #16a085 !important; /* Turquoise */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.features-section h4 {
+    color: #16a085;
+    font-weight: bold;
+}
+
+.features-section p {
+    color: #555555;
+}
+
+/* Community Section */
+.community-section {
+    background: linear-gradient(135deg, #1abc9c, #16a085) !important; /* Turquoise gradient */
+    color: #ffffff !important; /* White text for visibility */
+    text-align: center; /* Center align all content */
+    padding: 50px 20px;
+}
+
+.community-section h2 {
+    color: #ffffff !important; /* White text for title */
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.community-section .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.community-section .stats h4 {
+    font-size: 1.8rem !important;
+    color: #ffffff !important; /* White for visibility */
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+}
+
+.community-section .stats p {
+    color: #e0f2f1 !important; /* Slightly lighter text */
+}
+
+/* Call-to-Action Section */
+.card h2 {
+    color: #16a085 !important; /* Consistent turquoise */
+}
+
+/* Footer */
+footer {
+    background-color: #222831 !important;
+    border-top: 2px solid #16a085 !important; /* Turquoise */
+    padding: 20px 0 !important;
+    text-align: center !important;
+    color: #e9ecef !important;
+    font-size: 0.9rem !important;
+}
+
+footer a {
+    color: #1abc9c !important;
+    font-weight: bold !important;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary {
+    background-color: #16a085 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #12876b !important;
+}
+
+.btn-outline-primary {
+    color: #16a085 !important;
+    border: 2px solid #16a085 !important;
+    background: none !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #16a085 !important;
+    color: #ffffff !important;
+}
